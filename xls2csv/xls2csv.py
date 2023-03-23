@@ -1,36 +1,34 @@
 
-import streamlit as st
-import pandas as pd
-from io import BytesIO
 import os
+import pandas as pd
+import streamlit as st
+from io import BytesIO
 
-# Set page configuration
-st.set_page_config(page_title="Excel to CSV Converter", page_icon=":pencil:")
-
-# Create title
+# Title of the app
 st.title("Excel to CSV Converter")
 
-# Create file uploader
-uploaded_file = st.file_uploader("Upload an Excel file (.xlsx)", type=["xlsx", "xls"])
+# Upload the file
+uploaded_file = st.file_uploader("Choose an Excel file (.xlsx)", type="xlsx")
 
-# If file is uploaded
+# Check if the file is uploaded
 if uploaded_file is not None:
-    # Read in Excel file
     try:
+        # Read the Excel file into a DataFrame
         df = pd.read_excel(uploaded_file)
-    except:
-        # Display error message if file cannot be read
-        st.error("Failed to read file. Please make sure it is a valid Excel file.")
-        st.stop()
 
-    # Convert to CSV
-    csv = df.to_csv(index=False).encode()
+        # Preview of the data
+        st.write("Here's a preview of your data:")
+        st.write(df.head())
 
-    # Create download link
-    with BytesIO() as b:
-        b.write(csv)
-        href = f'<a href="data:file/csv;base64,{b.getvalue().decode()}" download="converted.csv">Download CSV File</a>'
+        # Convert the DataFrame to CSV and make it downloadable
+        csv_buffer = BytesIO()
+        df.to_csv(csv_buffer, index=False)
+        csv_buffer.seek(0)
 
-    # Display success message and download link
-    st.success("File conversion successful!")
-    st.markdown(href, unsafe_allow_html=True)
+        # Create a download link
+        b64 = base64.b64encode(csv_buffer.read()).decode()
+        href = f'<a href="data:file/csv;base64,{b64}" download="converted_file.csv">Download CSV File</a>'
+        st.markdown(href, unsafe_allow_html=True)
+
+    except Exception as e:
+        st.error(f"An error occurred while processing the file: {e}")
