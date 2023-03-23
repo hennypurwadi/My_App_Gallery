@@ -35,28 +35,27 @@ with col3:
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/pdf_combiner)')  
     
 with col4:    
-st.markdown(f'[![Excel to csv converter]({img5_url})](https://)')
+st.markdown(f'[![Excel to csv converter]({img5_url})](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
     st.write("Excel to csv converter")
-    st.markdown('[Go to App →](https://)')
+    st.markdown('[Go to App →](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
     
 with col5:
-    st.markdown(f'[![Video to Text converter]({img5_url})](https://)')
+    st.markdown(f'[![Video to Text converter]({img5_url})](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
     st.write("Video to Text converter")
-    st.markdown('[Go to App →](https://)')
-    st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/vid2txt)')
+    st.markdown('[Go to App →](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
+    st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
     
 # #FOR FUTURE APPS    
     
 # col6, col7, col8, col9, col10 = st.columns(5)
 
 # # URLs of the images in the GitHub repository
-# img6_url = "https://github.com/hennypurwadi/app_gallery/blob/main/img/img6.jpg?raw=true"
-# img7_url = "https://github.com/hennypurwadi/app_gallery/blob/main/img/img7.jpg?raw=true"
-# img8_url = "https://github.com/hennypurwadi/app_gallery/blob/main/img/img8.jpg?raw=true"
-# img9_url = "https://github.com/hennypurwadi/app_gallery/blob/main/img/img9.jpg?raw=true"
-# img10_url = "https://github.com/hennypurwadi/app_gallery/blob/main/img/img10.jpg?raw=true"
-
+# img6_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img6.jpg?raw=true"
+# img7_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img7.jpg?raw=true"
+# img8_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img8.jpg?raw=true"
+# img9_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img9.jpg?raw=true"
+# img10_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img10.jpg?raw=true"
 # # Display the images and create clickable links
 # with col6:
 #     st.write("Speech to text converter")
