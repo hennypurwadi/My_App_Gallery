@@ -6,7 +6,7 @@ from io import BytesIO
 
 st.title("Excel to CSV Converter")
 
-uploaded_file = st.file_uploader("Upload Excel file", type=["xlsx", "xls"])
+uploaded_file = st.file_uploader("Upload Excel file (.xlsx)", type=["xlsx"])
 
 if uploaded_file is not None:
     # Read Excel file into DataFrame
