@@ -29,22 +29,22 @@ with col2:
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/img2txt)')
 
 with col3:    
-    st.markdown(f'[![PDF combiner]({img5_url})](https://projectgroupinfo-apps-gallery-combine-pdfscombine-pdf-xtq139.streamlit.app/)')
+    st.markdown(f'[![PDF combiner]({img5_url})](https://hennypurwadi-my-gallery-pdf-combinercombine-pdf-fxdm75.streamlit.app/)')
     st.write("PDF combiner")
-    st.markdown('[Go to App →](https://projectgroupinfo-apps-gallery-combine-pdfscombine-pdf-xtq139.streamlit.app/)')
+    st.markdown('[Go to App →](https://hennypurwadi-my-gallery-pdf-combinercombine-pdf-fxdm75.streamlit.app/)')
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/pdf_combiner)')  
     
 with col4:    
-    st.markdown(f'[![PDF combiner]({img5_url})](https://projectgroupinfo-apps-gallery-combine-pdfscombine-pdf-xtq139.streamlit.app/)')
-    st.write("PDF combiner")
-    st.markdown('[Go to App →](https://projectgroupinfo-apps-gallery-combine-pdfscombine-pdf-xtq139.streamlit.app/)')
-    st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/pdf_combiner)')              
-
-with col5:
-    st.markdown(f'[![Excel to csv converter]({img5_url})](https://)')
+st.markdown(f'[![Excel to csv converter]({img5_url})](https://)')
     st.write("Excel to csv converter")
     st.markdown('[Go to App →](https://)')
-    st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/audio2txt)')
+    st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
+    
+with col5:
+    st.markdown(f'[![Video to Text converter]({img5_url})](https://)')
+    st.write("Video to Text converter")
+    st.markdown('[Go to App →](https://)')
+    st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/vid2txt)')
     
 # #FOR FUTURE APPS    
     
