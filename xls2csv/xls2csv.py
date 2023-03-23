@@ -1,28 +1,27 @@
 
-import pandas as pd
 import streamlit as st
+import pandas as pd
 
-# set page title
-st.set_page_config(page_title='XLS to CSV Converter', layout='wide')
+st.set_page_config(page_title="Excel to CSV Converter", page_icon=":pencil:")
 
-# add page title and description
-st.title('XLS to CSV Converter')
-st.write('This app allows you to convert an XLS file to CSV.')
+st.title("Excel to CSV Converter")
 
-# add file upload widget
-xls_file = st.file_uploader('Choose an XLS file', type=['xls', 'xlsx'])
+# Create file uploader
+uploaded_file = st.file_uploader("Upload an Excel file (.xlsx or .xls)", type=["xlsx", "xls"])
 
-# if file uploaded
-if xls_file is not None:
-    # read the XLS file
-    xls_df = pd.read_excel(xls_file)
+if uploaded_file is not None:
+    # Read in Excel file
+    try:
+        df = pd.read_excel(uploaded_file)
+    except:
+        st.error("Failed to read file. Please make sure it is a valid Excel file.")
+        st.stop()
 
-    # convert to CSV and get as string
-    csv_str = xls_df.to_csv(index=False)
+    # Convert to CSV
+    csv = df.to_csv(index=False)
 
-    # create download link
-    b64 = base64.b64encode(csv_str.encode()).decode()
-    href = f'<a href="data:file/csv;base64,{b64}" download="converted.csv">Download CSV file</a>'
+    # Create download link
+    href = f'<a href="data:file/csv;base64,{b64encode(csv.encode()).decode()}" download="converted.csv">Download CSV File</a>'
 
-    # display download link
+    # Display download link
     st.markdown(href, unsafe_allow_html=True)
