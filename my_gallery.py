@@ -9,11 +9,11 @@ st.write("Here are some of the apps:")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 # URLs of the images in the GitHub repository
-img1_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img1.jpg?raw=true"
-img2_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img2.jpg?raw=true"
-img3_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img3.jpg?raw=true"
-img4_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img4.jpg?raw=true"
-img5_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img5.jpg?raw=true"
+img1_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img1.jpeg?raw=true"
+img2_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img2.jpeg?raw=true"
+img3_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img3.jpeg?raw=true"
+img4_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img4.jpeg?raw=true"
+img5_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img5.jpeg?raw=true"
 
 # Display the images and create clickable links
 with col1:
@@ -51,11 +51,11 @@ with col5:
 # col6, col7, col8, col9, col10 = st.columns(5)
 
 # # URLs of the images in the GitHub repository
-# img6_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img6.jpg?raw=true"
-# img7_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img7.jpg?raw=true"
-# img8_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img8.jpg?raw=true"
-# img9_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img9.jpg?raw=true"
-# img10_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img10.jpg?raw=true"
+# img6_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img6.jpeg?raw=true"
+# img7_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img7.jpeg?raw=true"
+# img8_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img8.jpeg?raw=true"
+# img9_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img9.jpeg?raw=true"
+# img10_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img10.jpeg?raw=true"
 # # Display the images and create clickable links
 # with col6:
 #     st.write("Speech to text converter")
