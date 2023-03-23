@@ -41,9 +41,9 @@ with col4:
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
     
 with col5:
-    st.markdown(f'[![Video to Text converter]({img5_url})](https://github.com/hennypurwadi/my_gallery/tree/main/vid2txt)')
-    st.write("Video to Text converter")
-    st.markdown('[Go to App →](https://github.com/hennypurwadi/my_gallery/tree/main/vid2txt)')
+    st.markdown(f'[![Youtube Video to Audio converter]({img5_url})](https://hennypurwadi-my-gallery-vid2audiovid2audio-j3c9as.streamlit.app/)')
+    st.write("Youtube Video to Audio converter")
+    st.markdown('[Go to App →](https://hennypurwadi-my-gallery-vid2audiovid2audio-j3c9as.streamlit.app/)')
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/vid2txt)')
     
 # #FOR FUTURE APPS    
