@@ -29,13 +29,13 @@ with col2:
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/img2txt)')
 
 with col3:    
-    st.markdown(f'[![PDF combiner]({img5_url})](https://hennypurwadi-my-gallery-pdf-combinercombine-pdf-fxdm75.streamlit.app/)')
+    st.markdown(f'[![PDF combiner]({img3_url})](https://hennypurwadi-my-gallery-pdf-combinercombine-pdf-fxdm75.streamlit.app/)')
     st.write("PDF combiner")
     st.markdown('[Go to App →](https://hennypurwadi-my-gallery-pdf-combinercombine-pdf-fxdm75.streamlit.app/)')
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/pdf_combiner)')  
     
 with col4:    
-    st.markdown(f'[![Excel to csv converter]({img5_url})](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
+    st.markdown(f'[![Excel to csv converter]({img4_url})](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
     st.write("Excel to csv converter")
     st.markdown('[Go to App →](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
