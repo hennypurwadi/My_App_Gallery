@@ -1,4 +1,7 @@
 streamlit
+pandas
+base64
+csv
 Pillow
 requests
 click
