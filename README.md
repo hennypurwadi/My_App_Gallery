@@ -5,7 +5,7 @@ Apps Gallery link:
 
 2.Image to Text converter:https://hennypurwadi-my-gallery-img2txtimg2text-s8grum.streamlit.app/ 
 
-3.Pdf Combiner:
+3.Pdf Combiner: https://hennypurwadi-my-gallery-pdf-combinercombine-pdf-fxdm75.streamlit.app/
 
 4.Excel to csv:
 
