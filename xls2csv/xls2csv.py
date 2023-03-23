@@ -1,6 +1,7 @@
 
 import streamlit as st
 import pandas as pd
+from io import BytesIO
 
 st.set_page_config(page_title="Excel to CSV Converter", page_icon=":pencil:")
 
@@ -18,10 +19,11 @@ if uploaded_file is not None:
         st.stop()
 
     # Convert to CSV
-    csv = df.to_csv(index=False)
+    csv = df.to_csv(index=False).encode()
 
     # Create download link
-    href = f'<a href="data:file/csv;base64,{b64encode(csv.encode()).decode()}" download="converted.csv">Download CSV File</a>'
+    b64 = BytesIO(csv).getvalue()
+    href = f'<a href="data:file/csv;base64,{b64.decode()}" download="converted.csv">Download CSV File</a>'
 
     # Display download link
     st.markdown(href, unsafe_allow_html=True)
