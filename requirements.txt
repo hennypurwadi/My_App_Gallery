@@ -1,6 +1,5 @@
 streamlit
 pandas
-csv
 Pillow
 requests
 click
