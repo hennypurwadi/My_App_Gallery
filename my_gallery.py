@@ -35,9 +35,9 @@ with col3:
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/pdf_combiner)')  
     
 with col4:    
-    st.markdown(f'[![Excel to csv converter]({img4_url})](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
+    st.markdown(f'[![Excel to csv converter]({img4_url})](https://hennypurwadi-my-gallery-xls2csvxls2csv-3uybgt.streamlit.app/)')
     st.write("Excel to csv converter")
-    st.markdown('[Go to App →](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
+    st.markdown('[Go to App →](https://hennypurwadi-my-gallery-xls2csvxls2csv-3uybgt.streamlit.app/)')
     st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/xls2csv)')
     
 with col5:
