@@ -44,7 +44,7 @@ with col5:
     st.markdown(f'[![Youtube Video to Audio converter]({img5_url})](https://hennypurwadi-my-gallery-vid2audiovid2audio-j3c9as.streamlit.app/)')
     st.write("Youtube Video to Audio converter")
     st.markdown('[Go to App →](https://hennypurwadi-my-gallery-vid2audiovid2audio-j3c9as.streamlit.app/)')
-    st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/vid2txt)')
+    st.markdown('[View source code →](https://github.com/hennypurwadi/my_gallery/tree/main/vid2audio)')
     
 # #FOR FUTURE APPS    
     
