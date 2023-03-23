@@ -13,8 +13,8 @@ if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
 
     # Preview data
-    st.write("Here's a preview of your data:")
-    st.write(df.head())
+    #st.write("Here's a preview of your data:")
+    #st.write(df.head())
 
     # Convert DataFrame to CSV
     csv_buffer = BytesIO()
