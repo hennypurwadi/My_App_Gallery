@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 from io import BytesIO
+import os
 
 # Set page configuration
 st.set_page_config(page_title="Excel to CSV Converter", page_icon=":pencil:")
@@ -10,7 +11,7 @@ st.set_page_config(page_title="Excel to CSV Converter", page_icon=":pencil:")
 st.title("Excel to CSV Converter")
 
 # Create file uploader
-uploaded_file = st.file_uploader("Upload an Excel file (.xlsx)", type=["xlsx"])
+uploaded_file = st.file_uploader("Upload an Excel file (.xlsx)", type=["xlsx", "xls"])
 
 # If file is uploaded
 if uploaded_file is not None:
@@ -19,7 +20,7 @@ if uploaded_file is not None:
         df = pd.read_excel(uploaded_file)
     except:
         # Display error message if file cannot be read
-        st.error("Failed to read file. Please make sure it is a valid Excel .xlsx file.")
+        st.error("Failed to read file. Please make sure it is a valid Excel file.")
         st.stop()
 
     # Convert to CSV
