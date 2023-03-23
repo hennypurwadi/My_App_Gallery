@@ -16,4 +16,6 @@ openai
 pdf2image
 openpyxl
 xlrd
+pytube
+
 
