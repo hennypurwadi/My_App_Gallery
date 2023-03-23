@@ -9,6 +9,6 @@ Apps Gallery link:
 
 4.Pdf Combiner:
 
-5. Excel to csv:
+5.Excel to csv:
 
 6.Video to Text Converter:
