@@ -13,7 +13,7 @@ img1_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img1.jpeg?r
 img2_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img2.jpeg?raw=true"
 img3_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img3.jpeg?raw=true"
 img4_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img4.jpeg?raw=true"
-img5_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img5.jpeg?raw=true"
+img5_url = "https://github.com/hennypurwadi/my_gallery/blob/main/img/img5.jpg?raw=true"
 
 # Display the images and create clickable links
 with col1:
