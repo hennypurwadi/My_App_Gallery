@@ -41,7 +41,7 @@ def main():
 
         # Create new PDF file with the combined text
         pdf_writer = PdfWriter()
-        pdf_writer.add_page(PdfFileReader(io.StringIO(combined_text)).getPage(0))
+        pdf_writer.add_page(PdfReader(io.StringIO(combined_text)).getPage(0))
         pdf_bytes = io.BytesIO()
         pdf_writer.write(pdf_bytes)
 
