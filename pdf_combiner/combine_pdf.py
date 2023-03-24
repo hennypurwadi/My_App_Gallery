@@ -3,17 +3,6 @@ from PyPDF2 import PdfReader, PdfWriter
 import io
 import streamlit as st
 
-# extract text from a PDF
-def extract_text_from_pdf(file):
-    # Read PDF content
-    pdf_reader = PdfReader(io.BytesIO(file.read()))
-    num_pages = len(pdf_reader.pages)
-    text = ''
-    for page in range(num_pages):
-        page_obj = pdf_reader.pages[page]
-        text += page_obj.extract_text()
-    return text
-
 # Define Streamlit app
 def main():
     st.title("PDF Combiner")
@@ -37,8 +26,8 @@ def main():
         pdf_writer = PdfWriter()
         for file in files:
             pdf_reader = PdfReader(io.BytesIO(file.read()))
-            for page in range(len(pdf_reader.pages)):
-                pdf_writer.add_page(pdf_reader.getPage(page))
+            for page in pdf_reader.pages:
+                pdf_writer.add_page(page)
 
         pdf_bytes = io.BytesIO()
         pdf_writer.write(pdf_bytes)
