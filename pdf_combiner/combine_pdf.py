@@ -34,7 +34,6 @@ def main():
 
         # Display the combined PDF file
         st.write("Combined PDF:")
-        st.write(pdf_bytes, unsafe_allow_html=True)
 
         # Download button
         st.download_button(
