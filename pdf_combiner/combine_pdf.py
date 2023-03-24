@@ -23,7 +23,7 @@ def main():
     st.write(" ")
     st.write("For scanned images PDFs, need to convert PDF to Image & Image to text first to be readable PDFs")
     st.write("Upload up to 3 Real texts PDF files to combine:")
-    
+
     files = []
     for i in range(3):
         file = st.file_uploader(f"PDF file {i+1}", type="pdf", key=f"pdf_upload{i}")
@@ -33,15 +33,13 @@ def main():
     if not files:
         st.warning("Please upload one or more PDF files to continue.")
     else:
-        # Extract text from each PDF file
-        texts = [extract_text_from_pdf(file) for file in files]
-
-        # Combine the text into a single string
-        combined_text = '\n\n'.join(texts)
-
-        # Create new PDF file with the combined text
+        # Create new PDF file by merging the uploaded PDFs
         pdf_writer = PdfWriter()
-        pdf_writer.add_page(PdfReader(io.BytesIO(combined_text.encode())).getPage(0))
+        for file in files:
+            pdf_reader = PdfReader(io.BytesIO(file.read()))
+            for page in range(len(pdf_reader.pages)):
+                pdf_writer.add_page(pdf_reader.getPage(page))
+
         pdf_bytes = io.BytesIO()
         pdf_writer.write(pdf_bytes)
 
