@@ -1,9 +1,9 @@
 
-from PyPDF2 import PdfReader
+from PyPDF2 import PdfReader, PdfWriter
 import io
 import streamlit as st
 
-# Define a function to extract text from a PDF file
+# extract text from a PDF
 def extract_text_from_pdf(file):
     # Read PDF content
     pdf_reader = PdfReader(io.BytesIO(file.read()))
@@ -14,7 +14,7 @@ def extract_text_from_pdf(file):
         text += page_obj.extract_text()
     return text
 
-# Define the Streamlit app
+# Define Streamlit app
 def main():
     st.title("PDF Combiner")
 
@@ -39,9 +39,23 @@ def main():
         # Combine the text into a single string
         combined_text = '\n\n'.join(texts)
 
-        # Display the combined text
-        st.write("Combined text:")
-        st.write(combined_text)
+        # Create new PDF file with the combined text
+        pdf_writer = PdfWriter()
+        pdf_writer.add_page(PdfFileReader(io.StringIO(combined_text)).getPage(0))
+        pdf_bytes = io.BytesIO()
+        pdf_writer.write(pdf_bytes)
+
+        # Display the combined PDF file
+        st.write("Combined PDF:")
+        st.write(pdf_bytes, unsafe_allow_html=True)
+
+        # Download button
+        st.download_button(
+            label="Download combined PDF",
+            data=pdf_bytes.getvalue(),
+            file_name="combined.pdf",
+            mime="application/pdf",
+        )
 
 if __name__ == "__main__":
     main()
